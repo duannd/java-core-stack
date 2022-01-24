@@ -9,6 +9,12 @@ public class MonthDiffV2Main {
 
     public static void main(String[] args) {
         diffAndLog(LocalDate.of(2022, 1, 1),
+                LocalDate.of(2021, 12, 31)); // 0
+
+        diffAndLog(LocalDate.of(2022, 1, 1),
+                LocalDate.of(2022, 1, 1)); // 1
+
+        diffAndLog(LocalDate.of(2022, 1, 1),
                 LocalDate.of(2022, 1, 10)); // 1
 
         diffAndLog(LocalDate.of(2022, 1, 1),
